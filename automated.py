@@ -21,6 +21,7 @@ def _search_answers(_question):
     return pot_answers
 
 
+# driver = webdriver.Firefox(executable_path='./geckodriver') # -> for firefox   pretty obvious: firefox searchbar is red because firefox is under "remote control"
 driver = webdriver.Chrome("./chromedriver")
 driver.get("https://netacad.com")
 main_window = driver.current_window_handle
